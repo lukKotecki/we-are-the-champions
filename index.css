@@ -21,6 +21,7 @@ html, body {
 #container h1, h2{
     color: #fff;
     margin: 10px;
+    text-align: center;
 }
 
 
@@ -55,8 +56,12 @@ html, body {
     border: none;
     padding: 10px;
 }
+#publish-btn:hover{
+    background-color: #2092cf;
+    cursor: pointer;
+}
 
-#endorsements-field{
+#endorsements-area{
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -64,16 +69,19 @@ html, body {
     
 }
 
-.endorsement-element{
+#endorsements-area li{
     border-radius: 3px;
-    color: #fff;
     margin-bottom: 15px;
     padding: 10px 15px;
-
+    list-style-type: none;
     color: #1B1924;
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-
     background-color: #fff;
+}
+
+#endorsements-area li:hover{
+    background-color: #ddd;
+    cursor: pointer;
 }
