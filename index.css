@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: #1B1924;
+    max-width: 390px;
+    margin: 20px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container img{
+    width:90px;
+    height: 90px;
+    margin-top: 40px;
+}
+
+#container h1, h2{
+    color: #fff;
+    margin: 10px;
+}
+
+
+#publish-area{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+#endorsement-input{
+    text-align: left;
+    padding: 10px 15px;
+    height:120px;
+    border-radius: 8px;
+    background: #444059;
+    border: none;
+    color: #d2caca;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#publish-btn{
+    color: #04131C;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #28A9F1;
+    border: none;
+    padding: 10px;
+}
+
+#endorsements-field{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+}
+
+.endorsement-element{
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+
+    color: #1B1924;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+
+    background-color: #fff;
+}
