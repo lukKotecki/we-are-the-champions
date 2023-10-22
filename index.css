@@ -35,6 +35,9 @@ html, body {
     text-align: left;
     padding: 10px 15px;
     height:120px;
+}
+
+.input-element{
     border-radius: 8px;
     background: #444059;
     border: none;
@@ -42,6 +45,24 @@ html, body {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
+}
+#from-to-area{
+    margin-top: 10px;
+    display: flex;
+    width: 320px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    
+}
+#from-input{
+    width: 130px;
+    padding: 4px 10px;
+    text-align: center;
+}
+#to-input{
+    width: 130px;
+    padding: 4px 10px;
+    text-align: center;
 }
 
 #publish-btn{

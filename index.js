@@ -5,6 +5,8 @@ import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com
 const publishBtn = document.getElementById("publish-btn");
 const endorsementInput = document.getElementById("endorsement-input");
 const endorsementsArea = document.getElementById("endorsements-area");
+const fromInput = document.getElementById("from-input");
+const toInput = document.getElementById("to-input");
 
 import { databaseAddress } from "/database.js" 
 const app = initializeApp(databaseAddress);
@@ -23,14 +25,16 @@ publishBtn.addEventListener("click", function(){
 onValue(endorsementsInDatabase, function(snapshot){
     //snapshot.val() - zwraca obiekt w postaci klucz i wartosc, 
     //Object.entries() - zamienia obiekt na array
-    clearEndorsementsArea();
-    let endorsementsFromDatabase = Object.entries(snapshot.val()) 
-    //console.log(endorsementsFromDatabase) //do usuniecia
 
-    for(let i=0; i<endorsementsFromDatabase.length; i++){
-        addEndorsementElement(endorsementsFromDatabase[i]);
+    clearEndorsementsArea();
+    if (snapshot.exists()){
+        let endorsementsFromDatabase = Object.entries(snapshot.val()) 
+        for(let i=0; i<endorsementsFromDatabase.length; i++){
+            addEndorsementElement(endorsementsFromDatabase[i]);
+        }
+    }else{
+        endorsementsArea.textContent = "Nothing to show yet..."
     }
-    
 })
 
 
