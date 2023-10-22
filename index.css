@@ -18,9 +18,27 @@ html, body {
     margin-top: 40px;
 }
 
+#container h1{
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#container h2{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 #container h1, h2{
-    color: #fff;
-    margin: 10px;
     text-align: center;
 }
 
@@ -87,7 +105,7 @@ html, body {
     display: flex;
     flex-direction: column;
     color: #fff;
-    
+    padding: 0px;
 }
 
 #endorsements-area li{
@@ -105,4 +123,58 @@ html, body {
 #endorsements-area li:hover{
     background-color: #ddd;
     cursor: pointer;
+}
+
+
+
+h4{
+    margin: 0px;
+    color: #1B1924;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.value-of-endorsement{
+    margin: 5px 0px;
+    color: #1B1924;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+h5{
+    margin: 0px;
+    color: #1B1924;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.likes{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.likes:hover{
+    background-color: #fff;
+}
+
+.last-line{
+    display: flex;
+    justify-content: space-between;
 }
